@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct StoriesView: View {
+    @StateObject private var storyVM = StoryVM()
     @State private var selectedTopics: Topics = .persahabatan
     @State private var selectedMood: Mood = .bahagia
-    @State private var todayStory: String = ""
+   
     
     var body: some View {
         NavigationStack{
@@ -19,7 +20,7 @@ struct StoriesView: View {
                 Section {
                     Picker("Choose Topics", selection: $selectedTopics) {
                         ForEach(Topics.allCases,id: \.self) {topic  in
-                            Text(topic.rawValue.capitalized)
+                            Text(topic.rawValue)
                                 .font(.subheadline)
                                 .tag(topic)
                         }
@@ -28,7 +29,7 @@ struct StoriesView: View {
                     
                     Picker(selection: $selectedMood) {
                         ForEach(Mood.allCases,id: \.self) {mood  in
-                            Text(mood.rawValue.capitalized)
+                            Text(mood.rawValue)
                                 .font(.subheadline)
                                 .tag(mood)
                         }
@@ -43,11 +44,15 @@ struct StoriesView: View {
                     Text("Choose any topics and mood that you want to listen")
                 }
                 
-                // MARK: -
+                // MARK: - TEXT EDITOR
                 Section {
-                    TextEditor(text: $todayStory)
+                    TextEditor(text: $storyVM.storyText)
                         .frame(height: 200)
                         .foregroundStyle(.blue)
+                        .disabled(storyVM.isLoading)
+                        .overlay {
+                            storyVM.isLoading ? ProgressView() : nil
+                        }
                 } header: {
                     Text("Todays Story")
                 } footer: {
@@ -57,9 +62,11 @@ struct StoriesView: View {
                 // MARK: - BUTTON GENERATE
                 Button {
                     // Todo
-                    
+                    Task {
+                       await storyVM.generateStory(topic:selectedTopics,mood: selectedMood)
+                    }
                 } label: {
-                    Text("Generate".uppercased())
+                    Text(storyVM.storyText.isEmpty ? "Generate".uppercased() : "Speech".uppercased())
                         .font(.system(.callout, design: .rounded))
                         .fontWeight(.bold)
                 }
@@ -77,3 +84,5 @@ struct StoriesView: View {
 #Preview {
     StoriesView()
 }
+
+
