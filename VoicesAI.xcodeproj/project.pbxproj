@@ -17,6 +17,7 @@
 		5BE5437F2BD8F56600E3BE35 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5437E2BD8F56600E3BE35 /* Constant.swift */; };
 		5BE543812BD9FCA300E3BE35 /* StoriesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543802BD9FCA300E3BE35 /* StoriesVM.swift */; };
 		5BE543842BD9FD3000E3BE35 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE543832BD9FD3000E3BE35 /* GoogleGenerativeAI */; };
+		5BE543872BDA367700E3BE35 /* ElevenLabsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543862BDA367700E3BE35 /* ElevenLabsServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5BE5437C2BD8DCEC00E3BE35 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5BE5437E2BD8F56600E3BE35 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5BE543802BD9FCA300E3BE35 /* StoriesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVM.swift; sourceTree = "<group>"; };
+		5BE543862BDA367700E3BE35 /* ElevenLabsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevenLabsServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		5BE543642BD8DBBA00E3BE35 /* VoicesAI */ = {
 			isa = PBXGroup;
 			children = (
+				5BE543852BDA366400E3BE35 /* Services */,
 				5BE543772BD8DBE900E3BE35 /* App */,
 				5BE543762BD8DBDA00E3BE35 /* ViewModel */,
 				5BE543752BD8DBD300E3BE35 /* Resources */,
@@ -122,6 +125,14 @@
 				5BE543652BD8DBBA00E3BE35 /* VoicesAIApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		5BE543852BDA366400E3BE35 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5BE543862BDA367700E3BE35 /* ElevenLabsServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE543872BDA367700E3BE35 /* ElevenLabsServices.swift in Sources */,
 				5BE5437D2BD8DCEC00E3BE35 /* SettingsView.swift in Sources */,
 				5BE5437B2BD8DCD900E3BE35 /* StoriesView.swift in Sources */,
 				5BE543792BD8DC4C00E3BE35 /* Topics.swift in Sources */,

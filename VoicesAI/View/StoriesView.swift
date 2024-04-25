@@ -46,7 +46,7 @@ struct StoriesView: View {
                 
                 // MARK: - TEXT EDITOR
                 Section {
-                    TextEditor(text: $storyVM.storyText)
+                    TextEditor(text: $storyVM.displayedStoryText)
                         .frame(height: 200)
                         .foregroundStyle(.blue)
                         .disabled(storyVM.isLoading)
