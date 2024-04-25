@@ -15,6 +15,7 @@
 		5BE5437B2BD8DCD900E3BE35 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5437A2BD8DCD900E3BE35 /* StoriesView.swift */; };
 		5BE5437D2BD8DCEC00E3BE35 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5437C2BD8DCEC00E3BE35 /* SettingsView.swift */; };
 		5BE5437F2BD8F56600E3BE35 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5437E2BD8F56600E3BE35 /* Constant.swift */; };
+		5BE543812BD9FCA300E3BE35 /* StoriesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543802BD9FCA300E3BE35 /* StoriesVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5BE5437A2BD8DCD900E3BE35 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		5BE5437C2BD8DCEC00E3BE35 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5BE5437E2BD8F56600E3BE35 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5BE543802BD9FCA300E3BE35 /* StoriesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		5BE543762BD8DBDA00E3BE35 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5BE543802BD9FCA300E3BE35 /* StoriesVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				5BE5437B2BD8DCD900E3BE35 /* StoriesView.swift in Sources */,
 				5BE543792BD8DC4C00E3BE35 /* Topics.swift in Sources */,
 				5BE543682BD8DBBA00E3BE35 /* ContentView.swift in Sources */,
+				5BE543812BD9FCA300E3BE35 /* StoriesVM.swift in Sources */,
 				5BE543662BD8DBBA00E3BE35 /* VoicesAIApp.swift in Sources */,
 				5BE5437F2BD8F56600E3BE35 /* Constant.swift in Sources */,
 			);
