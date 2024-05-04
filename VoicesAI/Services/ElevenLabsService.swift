@@ -21,24 +21,28 @@ class ElevenLabsServices {
             return Data()
         }
         
+        print("accessing url \(url)")
+        
         print("You are using API_KEY \(apiKey) for request to ElevenLab!!")
         
         // Request Body
-        let body: [String : Any] = [
+        let body: [String: Any] = [
             "model_id": "eleven_multilingual_v2",
             "text":text,
             "voice_settings": [
-                "stability": 0.5,
-                "similarity_boost": 0.8
+                "stability": 1,
+                "similarity_boost": 1
             ]
         ]
         
-        let requestBody = try JSONSerialization.data(withJSONObject: body,
+        let requestBody = try? JSONSerialization.data(withJSONObject: body,
                                                      options: .fragmentsAllowed)
         
+        // POST data
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue(apiKey, forHTTPHeaderField: "xi-api-key")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = requestBody
         
         // Network Request for POST data
