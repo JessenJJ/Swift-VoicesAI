@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ElevenLabsServices {
+class ElevenLabsService {
     private let apiKey: String
 
     init(apiKey: String) {
@@ -28,15 +28,14 @@ class ElevenLabsServices {
         // Request Body
         let body: [String: Any] = [
             "model_id": "eleven_multilingual_v2",
-            "text":text,
+            "text": text,
             "voice_settings": [
                 "stability": 1,
                 "similarity_boost": 1
             ]
         ]
         
-        let requestBody = try? JSONSerialization.data(withJSONObject: body,
-                                                     options: .fragmentsAllowed)
+        let requestBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
         
         // POST data
         var request = URLRequest(url: url)

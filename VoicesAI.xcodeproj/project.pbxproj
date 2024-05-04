@@ -17,7 +17,8 @@
 		5BE5437F2BD8F56600E3BE35 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5437E2BD8F56600E3BE35 /* Constant.swift */; };
 		5BE543812BD9FCA300E3BE35 /* StoriesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543802BD9FCA300E3BE35 /* StoriesVM.swift */; };
 		5BE543842BD9FD3000E3BE35 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE543832BD9FD3000E3BE35 /* GoogleGenerativeAI */; };
-		5BE543872BDA367700E3BE35 /* ElevenLabsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543862BDA367700E3BE35 /* ElevenLabsServices.swift */; };
+		5BE543872BDA367700E3BE35 /* ElevenLabsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543862BDA367700E3BE35 /* ElevenLabsService.swift */; };
+		5BE543892BDA3CB200E3BE35 /* SpeechVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543882BDA3CB200E3BE35 /* SpeechVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,8 @@
 		5BE5437C2BD8DCEC00E3BE35 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5BE5437E2BD8F56600E3BE35 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5BE543802BD9FCA300E3BE35 /* StoriesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVM.swift; sourceTree = "<group>"; };
-		5BE543862BDA367700E3BE35 /* ElevenLabsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevenLabsServices.swift; sourceTree = "<group>"; };
+		5BE543862BDA367700E3BE35 /* ElevenLabsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevenLabsService.swift; sourceTree = "<group>"; };
+		5BE543882BDA3CB200E3BE35 /* SpeechVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				5BE543782BD8DC4C00E3BE35 /* Topics.swift */,
-				5BE5437E2BD8F56600E3BE35 /* Constant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5BE543802BD9FCA300E3BE35 /* StoriesVM.swift */,
+				5BE543882BDA3CB200E3BE35 /* SpeechVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -130,7 +132,8 @@
 		5BE543852BDA366400E3BE35 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5BE543862BDA367700E3BE35 /* ElevenLabsServices.swift */,
+				5BE5437E2BD8F56600E3BE35 /* Constant.swift */,
+				5BE543862BDA367700E3BE35 /* ElevenLabsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -211,7 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BE543872BDA367700E3BE35 /* ElevenLabsServices.swift in Sources */,
+				5BE543872BDA367700E3BE35 /* ElevenLabsService.swift in Sources */,
+				5BE543892BDA3CB200E3BE35 /* SpeechVM.swift in Sources */,
 				5BE5437D2BD8DCEC00E3BE35 /* SettingsView.swift in Sources */,
 				5BE5437B2BD8DCD900E3BE35 /* StoriesView.swift in Sources */,
 				5BE543792BD8DC4C00E3BE35 /* Topics.swift in Sources */,

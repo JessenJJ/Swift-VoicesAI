@@ -60,9 +60,9 @@ struct SettingsView: View {
                     saveKey()
                 }label: {
                     Text("Save")
-                        .padding(.trailing,8)
+                        
                 }
-                .padding()
+                .padding(.trailing, 8)
                 .disabled(geminiAIKey.isEmpty || elevenLabsKey.isEmpty)
             }
         }
